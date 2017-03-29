@@ -15,3 +15,10 @@ This untidy data, which can be downloaded from (https://d396qusza40orc.cloudfron
 When you unzip the untidy data at the link above to obtain the "UCI HAR Dataset" folder in your working directory, you will find it contains various text files detailing the different activities performed and the features measured through the wearable technology. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers were selected for generating the training data and 30% the test data. These can be found in the test and train folders of the dataset.
 
 The run_analysis.R script will work to label the untidy training and test datasets, extract only desired mean and standard deviation features, merge the two sets, and then finally summarize the mean and standard deviation measurements for each subject performing each activity and save the final tidy set in a text file named "tidy_data.txt".
+
+
+## Steps
+
+1. Unzip UCI HAR Dataset.zip
+2. run `source("run_analysis")`
+3. Review tidy data set in tidy_data.txt!
