@@ -1,11 +1,11 @@
-# Install data.table package if not already 
+# Install data.table package if not already
 if (!require("data.table")) {
   install.packages("data.table")
 }
 # Load data.table package
 library(data.table)
 
-# Read in different activities 
+# Read in different activities
 activitylabels <- read.table("UCI HAR Dataset/activity_labels.txt")[,2]
 # Read labels of in different measurements(features) in dataset
 features <- read.table("UCI HAR Dataset/features.txt")[,2]
@@ -43,7 +43,7 @@ traindata <- cbind(trainsubjects, trainactivities, extractedtrainset)
 # Merge test and train data
 mergeddata = rbind(testdata, traindata)
 
-#creates a second, independent tidy data set with 
+#creates a second, independent tidy data set with
 #the average of each variable for each activity and each subject.
 
 # Install reshape2 if not already so we can use melt and dcast
@@ -60,7 +60,7 @@ meltdata      = melt(mergeddata, id =  c("subject", "activityid", "activitylabel
 tidydata <- dcast(meltdata, subject + activitylabel ~ variable,mean)
 
 # Write tidy data to text file
-write.table(tidydata, file = "./tidy_data.txt")
+write.table(tidydata, file = "./tidy_data.txt", row.name=FALSE)
 
 # Read in tidy data file and View it
 # loadedtidy <- read.table("tidy_data.txt");
