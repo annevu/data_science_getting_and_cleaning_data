@@ -20,8 +20,8 @@ See the list of signal pattern names below:
 
 The set of variables that were estimated from all these signals are:
 
-mean: Mean value
-std: Standard deviation
+1)mean: Mean value
+2)std: Standard deviation
 
 * tBodyAcc-XYZ
 * tGravityAcc-XYZ
