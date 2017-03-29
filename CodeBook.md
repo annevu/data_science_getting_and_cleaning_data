@@ -11,11 +11,11 @@ Subsequently, the body linear acceleration and angular velocity were derived in 
 ## Variables in for tidy_data.txt
 
 1. subject
-⋅⋅⋅ identifies the subject who performed the activity. Its range is from 1 to 30.
+identifies the subject who performed the activity. Its range is from 1 to 30.
 2. activitylabel
-... identifies the activity the subject performed.
-... WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
-3.-68 Feature variable measurements
+identifies the activity the subject performed.
+WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
+3. -68. Feature variable measurements
 
 See the list of signal pattern names below:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
@@ -24,7 +24,6 @@ The set of variables that were estimated from all these signals are:
 
 mean: Mean value
 std: Standard deviation
-
 
 tBodyAcc-XYZ
 tGravityAcc-XYZ
